@@ -1,0 +1,27 @@
+{
+    "name": "Controle de gasto Mensal",
+    "short_name": "Controle de gasto Mensal",
+    "description": "Tenha controle das suas finanças de forma simples e clara.",
+    "icons": [
+      {
+        "src": "favicon.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "orientation": "portrait-primary",
+    "theme_color": "#0a0a0a",
+    "shortcuts": [
+        {
+
+            "name": "Controle de gasto Mensal",
+            "short_name": "Controle de gasto Mensal",
+            "description": "Tenha controle das suas finanças de forma simples e clara.",
+            "icons": [{ "src": "favicon.png", "sizes": "32x32" }]
+        }
+    ]
+  }

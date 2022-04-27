@@ -1,0 +1,465 @@
+/* RESET */
+	* {
+		font-family: sans-serif;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		outline: none;
+	}
+	body {
+	    background: #f3f3f3;
+	}
+	.caixa {
+		background: #fff;
+	    padding: 40px;
+	    display: flex;
+	    flex-direction: column;
+	}
+	.caixa.configuracao {
+	    margin-bottom: 30px;
+	}
+	.caixa .label {
+		margin: 0 0 30px;
+	}
+	.caixa .form input,
+	.caixa .form select,
+	.caixa .form textarea {
+		width: 100%;
+		padding: 15px;
+		border-radius: 6px;
+		margin-bottom: 15px;
+		border: 1px solid #cecece;
+	}
+	.caixa .form textarea {
+		height: 150px;
+		resize: none;
+	}
+	input::-webkit-input-placeholder {
+	    color: currentColor;
+	}
+	.caixa .form input[type="submit"] {
+		cursor: pointer;
+	    font-weight: 600;
+	    text-transform: uppercase;
+	    font-size: 16px;
+	    letter-spacing: 2px;
+		background: #000;
+		color: #fff;
+	}
+	.caixa .form input[type="submit"]:hover {
+		background-color: #212121;
+	}
+	.label_info {
+	    font-size: 14px;
+	    margin: 5px 0;
+	    color: #3453ff;
+	    font-weight: 600;
+	}
+	.label_msg {
+		margin-top: 20px;
+	}
+	.btn_add_categoria {
+	    margin: 0px;
+	    text-decoration: none;
+	    font-size: 14px;
+	    display: block;
+	    justify-content: revert;
+	    background: #000;
+	    color: #fff;
+	    width: fit-content;
+	    padding: 2px 8px;
+	    border-radius: 3px 3px 0 0;
+	}
+	.btn_add_categoria:hover {
+		background: #212121;
+	}
+	.btn {
+		background: #000;
+    	color: #ffff;
+		text-decoration: inherit;
+		border-radius: 4px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		padding: 0 15px;
+		width: max-content;
+		cursor: pointer;
+    	font-weight: 600;
+    	text-transform: uppercase;
+		border: none;	
+	}
+	.btn i {
+		margin-right: 10px;
+	}
+/* MENU */
+	.menu {
+		position: fixed;
+		width: 100%;
+		background: #000;
+		padding: 20px 10px;
+		z-index: 2;
+		display: flex;
+		justify-content: space-around;
+	}
+	.menu a {
+		color: #fff;
+		text-decoration: none;
+	}
+/* LOGIN */
+	.login {
+		height: calc(100vh - 90px);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: -80px;
+	}
+	.login .form {
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		background-color: #2a2a2a;
+		padding: 20px;
+		border-radius: 12px;
+		width: 500px;
+		align-items: center;
+    	justify-content: center;
+	}
+	.login .form h1 {
+	    margin-bottom: 10px;
+	}
+	.login .form p {
+	    margin-bottom: 25px;
+	}
+	.login .form input {
+		width: 100%;
+		padding: 15px;
+		border-radius: 6px;
+		margin-bottom: 15px;
+		border: none;
+	    max-width: 400px;
+	}
+	.login .form input[type="submit"] {
+		cursor: pointer;
+	    font-weight: 600;
+	    text-transform: uppercase;
+	    font-size: 16px;
+	    letter-spacing: 2px;
+	}
+	.login .form input[type="submit"]:hover {
+		background-color: #b5b5b5;
+	}
+	.erro_login {
+		text-align: center;
+		font-size: 14px;
+		color: #ff8989;
+    	margin: 0 !important;
+	}
+/* PAGINAS */
+	.main {
+		padding: 80px 10px 10px;
+		 display: flex;
+		 flex-direction: column; 
+	}
+	.titulo {
+		font-size: 34px;
+		margin-bottom: 25px;
+	}
+	.label { 
+		margin: 0 0 10px; 
+		font-size: 22px;
+	}
+	.mes { 
+		display: flex; 
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+	.dia {
+	    width: calc(100% / 7);
+	    height: 130px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+		align-items: center;
+	    border: 1px solid #cecece;
+	    position: relative;
+	}
+	.dia:hover {
+	    background: #f3f3f3;
+	}
+	.passado {
+		background: #dfdfdf;
+		text-decoration: none;
+		color: #000;
+	}
+	a.dia.passado label {
+	    cursor: pointer;
+	}
+	.label_dia {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    background: #c5c5c5;
+	    padding: 5px;
+	    font-weight: 600;
+	}
+/* DASHBOARD */
+	.container_dash_topo {
+		display: flex;
+		align-items: center;
+	}
+	.container_dash {
+		display: flex;
+	}
+	.coluna2_dash {
+		width: 100%;
+    	margin-left: 30px;
+    	display: flex;
+    	flex-direction: column;
+	}
+	.form_dash {
+		margin: 0 15px 20px;
+		display: flex;
+	}
+	.mes_dash {
+		width: 100%;
+	    background: #fff;
+	    padding: 15px 15px 30px;
+	    border-radius: 12px;
+	    border: 1px solid #c5c5c5;
+	    margin-bottom: 30px;
+	    flex: 1 1 auto;
+	}
+	.info_dash {
+	    background: #fff;
+	    padding: 15px 20px 5px;
+	    border-radius: 12px;
+	    border: 1px solid #c5c5c5;
+	    margin-bottom: 30px;
+	}
+	.grafico_dash {
+		width: 500px;
+	    background: #fff;
+	    padding: 15px;
+	    border-radius: 12px;
+	    border: 1px solid #c5c5c5;
+	    margin-bottom: 30px;
+	} 
+	.sem_dia {
+	    text-align: center;
+	    margin: 0 auto;
+	    margin: 20px auto;
+	    font-weight: 600;
+	}
+	.select_mes {
+		padding: 5px 20px 5px 5px;
+		border-radius: 4px;
+		font-size: 18px;
+		height: 40px;
+		margin-right: 5px;
+	}
+	.categoria_dash {
+	    width: 100%;
+	    background: #fff;
+	    padding: 15px 15px 20px;
+	    border-radius: 12px;
+	    border: 1px solid #c5c5c5;
+	    margin-bottom: 30px;
+	}
+
+	.categoria_box {
+	    margin-top: 30px;
+	    display: flex;
+    	flex-wrap: wrap;
+	}
+
+	a.categoria_link {
+	    background: #dfdfdf;
+	    text-decoration: none;
+	    color: #000;
+	    padding: 7px 20px;
+	    border-radius: 20px;
+	    font-weight: 600;
+	    margin: 10px 5px;
+	    border: 1px solid #c5c5c5;
+	}
+
+	a.categoria_link:hover {
+	    background: #f3f3f3;
+	}
+/* EXIBICAO CUSTO / DIAS */
+	.tabela_registro {
+		width: 100%;
+	    border-collapse: collapse;
+	}
+	.tabela_registro thead {
+	    background: #cfcfcf;
+	    height: 35px;
+	}
+	.tabela_registro tbody tr {
+	    height: 35px;
+	}
+	.tabela_registro tbody tr:nth-child(even) {
+		background: #f3f3f3;
+	}
+	.tabela_col_center {
+		text-align: center;
+	}
+	.tabela_col_left {
+		text-align: left;
+	}
+	.box_icons_acao  {
+	    display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 35px;
+	}
+	.tabela_btn_acao {
+		position: relative;
+	}
+	.box_icons_acao a,
+	.tabela_btn_acao i {
+		text-decoration: none;
+		color: #000;
+		text-align: center;
+		display: block;
+	}
+	.close_acao_mob {
+		display: none !important;
+	    margin-right: -20px;
+	}
+	.tabela_registro thead tr th:nth-child(1) {
+		width: 5%;
+	}
+	.tabela_registro thead tr th:nth-child(2),
+	.tabela_registro thead tr th:nth-child(3) {
+	    width: 25%;
+	}
+	.tabela_registro thead tr th:nth-child(4),
+	.tabela_registro thead tr th:nth-child(5),
+	.tabela_registro thead tr th:nth-child(6){
+	    width: 15%;
+	}
+	.icon_acao_mob { 
+		display: none !important;
+		cursor: pointer;
+	}
+	.show_acao_mob {
+		display: flex !important;
+		background: #e1e1e1;
+	    width: calc(100vw - 20px);
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	}
+/* REGISTRO DE CUSTO */
+	.novo_custo .form {
+		display: flex;
+		flex-direction: column;
+	}
+/* EDICAO DE CUSTO */
+	.item_custo {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.item_custo_box_acoes {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.item_custo_box_acoes .btn {
+		margin-right: 10px;
+	}
+/* MEDIA */
+	@media (max-width: 1200px) {
+		.container_dash {
+			flex-direction: column;
+		}
+		.coluna2_dash {
+			margin-left: 0;
+		}
+		.mes_dash {
+			margin-left: 0;
+		}
+		.grafico_dash {
+			width: 100%;
+			padding: 15px 30%;
+		}
+	}
+	@media (max-width: 1024px) {
+		.caixa.registro {
+			padding: 0;
+		}
+		.grafico_dash {
+			padding: 15px 25%;
+		}
+	}
+	@media (max-width: 768px) {
+		.login .form {
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    padding: 80px 20px;
+		    border-radius: 0;
+		}
+		.container_dash_topo {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.form_dash, .select_mes {
+			width: 100%;
+			margin: 0;
+		}
+		.select_mes {
+		    margin-right: 5px;
+		}
+		.dia {
+		    width: calc(100% / 4);
+		}
+		.grafico_dash {
+			padding: 15px 20%;
+		}
+		.caixa {
+			padding: 40px 20px;
+		}
+		.tabela_registro thead tr th:nth-child(2), 
+		.tabela_registro tbody tr td:nth-child(2) {
+		    width: 60%;
+		    padding-left: 10px;
+		}
+		.tabela_registro thead tr th:nth-child(4){
+		    width: 25%;
+		}
+		.tabela_registro thead tr th:nth-child(6) {
+		    width: 15%;
+		}
+		.tabela_col_mob {
+			display: none;
+		}
+		.icon_acao_mob { 
+			display: block !important; 
+		}
+		.box_icons_acao { 
+			display: none; 
+		}
+		.close_acao_mob {
+			display: block !important;
+		}
+	}
+	@media (max-width: 560px) {
+		.grafico_dash {
+			padding: 15px;
+		}
+	}
+	@media (max-width: 450px) {
+		.dia {
+		    width: calc(100% / 3);
+		}
+		.tabela_registro thead,
+		.tabela_registro tbody tr,
+		.box_icons_acao {
+			height: 60px;
+		}
+	}
+	
